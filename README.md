@@ -167,7 +167,7 @@ Custom function to handle when current buffer is not enough to write encoded dat
 #### `onRelease?: (buf: Uint8Array) => void;`
 Custom function to handle released buffer when encoder is reset.
 ```javascript
-import { QEncoder } from "qpack";
+import { QEncoder } from "@se-puu/qpack";
 
 // create encoder instance.
 const encoder=QEncoder.create();
@@ -192,7 +192,7 @@ The reading process of data is ended or not.
 #### `extRegistry: ExtRegistry`
 An option to configure and optimise the returned decoder instance.
 ```javascript
-import { QDecoder } from "qpack";
+import { QDecoder } from "@se-puu/qpack";
 
 // create decoder instance
 const decoder=QDecoder.create();
@@ -213,7 +213,7 @@ Unregister an extension from extension registry.
 #### `overWrite?: boolean`
 Forces the overwriting of the extension code if it already exists.
 ```javascript
-import { ExtRegistry, QEncoder, QDecoder } from "qpack";
+import { ExtRegistry, QEncoder, QDecoder } from "@se-puu/qpack";
 
 const ereg=ExtRegistry.create();
 const encoder=QEncoder.create({extRegistry:ereg});
@@ -262,7 +262,7 @@ class MyExt{
 ## Example
 simple encode, decode without performance considerations.
 ```javascript
-import { QEncoder, QDecoder } from "qpack";
+import { QEncoder, QDecoder } from "@se-puu/qpack";
 
 const object={
     some:"data",
@@ -282,7 +282,7 @@ optimised encode, decode with high performance without using extensions.
 Encoding and decoding an entire object can take significantly longer than processing individual data of this object, which may affect data access latency.
 Normal way.Accessing data is high latency.
 ```javascript
-import { QEncoder, QDecoder } from "qpack";
+import { QEncoder, QDecoder } from "@se-puu/qpack";
 
 const itemShowCase=[
     {
@@ -312,7 +312,7 @@ itemArr.forEach(item=>{
 ```
 Optimised way.Accessing data is low latency for large array.Small array may not be seen difference.
 ```javascript
-import { QEncoder, QDecoder } from "qpack";
+import { QEncoder, QDecoder } from "@se-puu/qpack";
 
 const itemShowCase=[
     {
