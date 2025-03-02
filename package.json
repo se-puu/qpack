@@ -1,6 +1,6 @@
 {
   "name": "@se-puu/qpack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Quick serializer and de-serializer",
   "author": "qpack community",
   "license": "MIT",
