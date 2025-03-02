@@ -53,6 +53,14 @@
     "webpack-cli": "^6.0.1"
   },
   "files": [
-    "dist"
+    "decoder/**/*.*",
+    "encoder/**/*.*",
+    "example/**/*.*",
+    "lib/**/*.*",
+    "index.d.ts",
+    "index.js",
+    "package.json",
+    "LICENSE",
+    "README.md"
   ]
 }
