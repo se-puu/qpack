@@ -1,0 +1,58 @@
+{
+  "name": "@se-puu/qpack",
+  "version": "1.0.0",
+  "description": "Quick serializer and de-serializer",
+  "author": "qpack community",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint src/**/*.ts",
+    "test": "tsx --expose-gc example/test.ts",
+    "test-heavy": "tsx --expose-gc example/test-heavy.ts"
+  },
+  "homepage": "https://sepuu.com",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/se-puu/qpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/se-puu/qpack/issues"
+  },
+  "keywords": [
+    "qpack",
+    "sepuu",
+    "se-puu",
+    "serializer",
+    "deserializer",
+    "encoder",
+    "decoder",
+    "serialization",
+    "deserialization"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^22.10.5",
+    "eslint": "^9.17.0",
+    "globals": "^15.14.0",
+    "terser-webpack-plugin": "^5.3.12",
+    "ts-loader": "^9.5.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "files": [
+    "dist"
+  ]
+}
